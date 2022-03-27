@@ -1,0 +1,17 @@
+.Weather {
+  text-align: center;
+  margin: 10px auto;
+  padding: 15px;
+
+  background: linear-gradient(-20deg, #f0f6cb 0%, #d1d46e 100%);
+  background: rgb(40, 7, 53);
+  color: rgb(56, 56, 63);
+  color: antiquewhite;
+  border-radius: 4px;
+  font-family: "Nunito", sans-serif;
+}
+.Weather h1 {
+  font-weight: 500;
+  font-size: 23px;
+  margin: 0;
+}
