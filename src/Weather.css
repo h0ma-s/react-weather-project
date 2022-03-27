@@ -3,10 +3,16 @@
   margin: 10px auto;
   padding: 15px;
 
-  background: linear-gradient(-20deg, #f0f6cb 0%, #d1d46e 100%);
-  background: rgb(40, 7, 53);
+  background: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
   color: rgb(56, 56, 63);
-  color: antiquewhite;
   border-radius: 4px;
   font-family: "Nunito", sans-serif;
 }
