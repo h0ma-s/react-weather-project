@@ -1,15 +1,17 @@
 .units {
-  font-size: 18px;
+  font-size: 17px;
   position: relative;
-  top: -10px;
-  font-weight: 300;
-}
-.units .active {
-  font-weight: 900;
+  top: -12px;
+  font-weight: 100;
 }
 
 .units button {
   border: none;
   background: transparent;
   padding: 0;
+  color: #38383fb7;
+}
+.current {
+  font-weight: 900;
+  color: #08080c;
 }

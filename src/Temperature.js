@@ -17,7 +17,7 @@ export default function Temperature(props) {
       <h2>
         {Math.round(props.celsius)}{" "}
         <span className="units">
-          <span className="active">°C</span> |{" "}
+          <span className="current">°C</span> |{" "}
           <button onClick={displayFahrenheit}>°F</button>
         </span>
       </h2>
@@ -28,7 +28,7 @@ export default function Temperature(props) {
         {Math.round(fahrenheit)}{" "}
         <span className="units">
           <button onClick={displayCelsius}>°C</button> |{" "}
-          <span className="active">°F</span>
+          <span className="current">°F</span>
         </span>
       </h2>
     );
