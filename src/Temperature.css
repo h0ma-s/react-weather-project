@@ -7,7 +7,9 @@
 .units .active {
   font-weight: 900;
 }
-.units a {
-  text-decoration: none;
-  color: #383f4d;
+
+.units button {
+  border: none;
+  background: transparent;
+  padding: 0;
 }
