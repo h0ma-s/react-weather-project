@@ -14,9 +14,9 @@ export default function Temperature(props) {
   let fahrenheit = (props.celsius * 9) / 5 + 32;
   if (unit === "celsius") {
     return (
-      <h2>
+      <h2 className="mt-3">
         {Math.round(props.celsius)}{" "}
-        <span className="units">
+        <span className="units ">
           <span className="current">°C</span> |{" "}
           <button onClick={displayFahrenheit}>°F</button>
         </span>
