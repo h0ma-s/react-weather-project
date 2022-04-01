@@ -7,7 +7,9 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherInfo(props) {
   return (
     <div className="Weather">
-      <h1>{props.data.city}</h1>
+      <h1>
+        <i className="fa-solid fa-map-pin"></i> {props.data.city}
+      </h1>
       <div className="text-capitalize">{props.data.description}</div>
       <FormattedDate date={props.data.date} />
       <WeatherIcon code={props.data.icon} size={72} />

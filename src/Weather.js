@@ -43,7 +43,7 @@ export default function Weather(props) {
           onChange={handleChange}
         />
         <button className="btn btn-outline-secondary" type="button">
-          Search{" "}
+          <i className="fa-solid fa-magnifying-glass"></i>{" "}
         </button>
       </div>
     </form>
