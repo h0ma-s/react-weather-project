@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./WeatherForecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
 import axios from "axios";
 export default function WeatherForecast(props) {
-  const [ready, setReady] = useState(false);
-  const [forecast, setForecast] = useState(null);
+  let [ready, setReady] = useState(false);
+  let [forecast, setForecast] = useState(null);
+  useEffect(() => {
+    setReady(false);
+  }, [props.coord]);
   function handleResponse(response) {
-    console.log(response);
     setForecast(response.data.daily);
     setReady(true);
   }
@@ -15,9 +17,17 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
         <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast} />
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 5) {
+              return (
+                <div className="col mt-4" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
         </div>
       </div>
     );
